@@ -3,11 +3,12 @@
 [![npm](https://img.shields.io/npm/v/dh-validator.svg?style=flat&color=635bff)](https://www.npmjs.com/package/dh-validator)
 [![license](https://img.shields.io/npm/l/dh-validator.svg?style=flat&color=4f46e5)](./LICENSE)
 [![types](https://img.shields.io/npm/types/dh-validator.svg?style=flat)](https://www.npmjs.com/package/dh-validator)
-[![CI](https://github.com/dinghui/dh-validator/actions/workflows/test.yml/badge.svg)](https://github.com/dinghui/dh-validator/actions)
+[![CI](https://github.com/dingh123/dh-validator/actions/workflows/test.yml/badge.svg)](https://github.com/dingh123/dh-validator/actions)
+[![Demo](https://img.shields.io/badge/在线演示-live-635bff?style=flat)](https://dingh123.github.io/dh-validator/)
 
 现代化 TS 表单校验工具：链式 Schema API、结构化错误、跨字段与条件校验、异步规则、Vue 3 组合式 API、可扩展插件机制。**30+** 内置业务规则，框架无关，压缩后 < 30 KB。
 
-> [English README](./README.md)
+> 🎮 **[在线演示 →](https://dingh123.github.io/dh-validator/)** &nbsp;·&nbsp; [English README](./README.md)
 
 ## 特性
 
@@ -241,6 +242,7 @@ const msg = checker.getError('mobile')
 
 ## 文档
 
+- 🎮 [**在线演示**](https://dingh123.github.io/dh-validator/) — 可交互的 playground
 - 🇬🇧 [README (English)](./README.md)
 - 🇨🇳 [中文文档](./README.zh-CN.md)
 - 📓 [Examples](./examples)

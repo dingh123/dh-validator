@@ -3,13 +3,14 @@
 [![npm](https://img.shields.io/npm/v/dh-validator.svg?style=flat&color=635bff)](https://www.npmjs.com/package/dh-validator)
 [![license](https://img.shields.io/npm/l/dh-validator.svg?style=flat&color=4f46e5)](./LICENSE)
 [![types](https://img.shields.io/npm/types/dh-validator.svg?style=flat)](https://www.npmjs.com/package/dh-validator)
-[![CI](https://github.com/dinghui/dh-validator/actions/workflows/test.yml/badge.svg)](https://github.com/dinghui/dh-validator/actions)
+[![CI](https://github.com/dingh123/dh-validator/actions/workflows/test.yml/badge.svg)](https://github.com/dingh123/dh-validator/actions)
+[![Demo](https://img.shields.io/badge/demo-live-635bff?style=flat)](https://dingh123.github.io/dh-validator/)
 
 A modern, type-safe form validation library — chainable schema, structured errors,
 cross-field & conditional rules, async validation, Vue 3 composable, extensible plugins.
 **30+** built-in business rules, framework-agnostic, < 30 KB minified.
 
-> [中文文档](./README.zh-CN.md)
+> 🎮 **[Try it live →](https://dingh123.github.io/dh-validator/)** &nbsp;·&nbsp; [中文文档](./README.zh-CN.md)
 
 ## Features
 
@@ -205,6 +206,7 @@ Works in any environment without Vue: Vue 2.6 and below, mini-programs, Node CLI
 
 ## Documentation
 
+- 🎮 [**Live demo**](https://dingh123.github.io/dh-validator/) — interactive playground
 - 🇬🇧 [README (English)](./README.md)
 - 🇨🇳 [中文文档](./README.zh-CN.md)
 - 📓 [Examples](./examples)

@@ -19,13 +19,13 @@
   ],
   "license": "MIT",
   "author": "dinghui",
-  "homepage": "https://github.com/dinghui/dh-validator#readme",
+  "homepage": "https://dingh123.github.io/dh-validator/",
   "bugs": {
-    "url": "https://github.com/dinghui/dh-validator/issues"
+    "url": "https://github.com/dingh123/dh-validator/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dinghui/dh-validator.git"
+    "url": "https://github.com/dingh123/dh-validator.git"
   },
   "type": "module",
   "main": "./dist/index.cjs",
