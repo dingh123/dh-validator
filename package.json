@@ -1,0 +1,99 @@
+{
+  "name": "dh-validator",
+  "version": "1.0.0",
+  "description": "A modern, type-safe form validation library: chainable Schema API, structured errors, cross-field & conditional validation (when), async rules, Vue 3 composable useValidator, extensible plugin system. 30+ built-in business rules including Chinese ID card with checksum, bank card Luhn, mobile (CN/intl), email, URL, etc. Works with Vue 2/3, TS/JS, mini-programs, Node.",
+  "keywords": [
+    "validator",
+    "validation",
+    "schema",
+    "form",
+    "form-validation",
+    "type-safe",
+    "vue",
+    "vue3",
+    "composable",
+    "useValidator",
+    "async-validation",
+    "conditional-validation",
+    "graceChecker"
+  ],
+  "license": "MIT",
+  "author": "dinghui",
+  "homepage": "https://github.com/dinghui/dh-validator#readme",
+  "bugs": {
+    "url": "https://github.com/dinghui/dh-validator/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dinghui/dh-validator.git"
+  },
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:cov": "vitest run --coverage",
+    "lint": "eslint src tests --ext .ts",
+    "lint:fix": "eslint src tests --ext .ts --fix",
+    "format": "prettier --write \"{src,tests,examples}/**/*.{ts,js,md,json}\"",
+    "format:check": "prettier --check \"{src,tests,examples}/**/*.{ts,js,md,json}\"",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "pnpm build",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "pnpm build && changeset publish",
+    "playground": "pnpm --dir playground dev",
+    "playground:install": "pnpm --dir playground install"
+  },
+  "peerDependencies": {
+    "vue": "^2.7.0 || ^3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "vue": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.9",
+    "@types/node": "^20.11.0",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "@vitest/coverage-v8": "^1.6.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "prettier": "^3.3.3",
+    "tsup": "^8.3.5",
+    "typescript": "^5.5.4",
+    "vitest": "^1.6.0",
+    "vue": "^3.4.21"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm install *)",
+      "Bash(pnpm dev *)",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\\\\n\" http://localhost:5174/)",
+      "Bash(curl -s http://localhost:5174/src/main.ts)",
+      "Bash(curl -s \"http://localhost:5174/@id/__x00__plugin-vue:export-helper\" -o /dev/null -w \"helper %{http_code}\\\\n\")",
+      "Bash(curl -s \"http://localhost:5174/src/scenes/BasicForm.vue\" -o /dev/null -w \"BasicForm %{http_code}\\\\n\")",
+      "Bash(curl -s \"http://localhost:5174/src/scenes/ConditionalForm.vue\" -o /dev/null -w \"ConditionalForm %{http_code}\\\\n\")",
+      "Bash(curl -s \"http://localhost:5174/src/scenes/AsyncExtendForm.vue\" -o /dev/null -w \"AsyncExtend %{http_code}\\\\n\")",
+      "Bash(curl -s \"http://localhost:5174/@fs/Users/mac/Documents/dinghui/dh-validator/src/index.ts\" -o /dev/null -w \"lib-source %{http_code}\\\\n\")",
+      "Bash(curl -s -o /dev/null -w \"App %{http_code}\\\\n\" \"http://localhost:5174/src/App.vue\")",
+      "Bash(curl -s -o /dev/null -w \"I18n %{http_code}\\\\n\" \"http://localhost:5174/src/scenes/I18nForm.vue\")",
+      "Bash(curl -s -o /dev/null -w \"Upload %{http_code}\\\\n\" \"http://localhost:5174/src/scenes/UploadForm.vue\")",
+      "Bash(npx vue-tsc *)"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+# 依靠 package.json 的 files 字段做白名单，这里仅做兜底
+src
+tests
+examples
+playground
+.github
+.changeset
+.vscode
+.idea
+coverage
+node_modules
+*.log
+.DS_Store
+.env
+.env.local
+tsconfig*.json
+tsup.config.ts
+vitest.config.ts
+eslint.config.js
+.eslintrc*
+.prettierrc*
+.editorconfig
+.nvmrc
+README.zh-CN.md
