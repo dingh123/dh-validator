@@ -13,7 +13,12 @@
       "Bash(curl -s -o /dev/null -w \"App %{http_code}\\\\n\" \"http://localhost:5174/src/App.vue\")",
       "Bash(curl -s -o /dev/null -w \"I18n %{http_code}\\\\n\" \"http://localhost:5174/src/scenes/I18nForm.vue\")",
       "Bash(curl -s -o /dev/null -w \"Upload %{http_code}\\\\n\" \"http://localhost:5174/src/scenes/UploadForm.vue\")",
-      "Bash(npx vue-tsc *)"
+      "Bash(npx vue-tsc *)",
+      "Bash(npm view *)",
+      "Bash(BASE_PATH=/dh-validator/ pnpm --dir playground build)",
+      "Bash(pnpm typecheck *)",
+      "Bash(pnpm test *)",
+      "Bash(pnpm lint *)"
     ]
   }
 }

@@ -19,7 +19,7 @@ const schema = v.object({
   }),
 
   invoiceTitle: v.string().when('userType', {
-    is: (type) => type === 'enterprise',
+    is: (type: unknown) => type === 'enterprise',
     then: v.string().required().label('Invoice title'),
     otherwise: v.string().optional(),
   }),

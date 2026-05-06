@@ -221,10 +221,35 @@ pnpm test:cov      # with coverage
 pnpm lint          # eslint
 pnpm format        # prettier
 pnpm build         # tsup build → dist/
-pnpm changeset     # add a changeset for next release
+pnpm playground    # interactive demo at http://localhost:5174
+pnpm changeset     # write a changelog entry for next release
 ```
 
 CI (GitHub Actions) runs typecheck + lint + tests + build on every PR.
+
+## Releasing
+
+Releases are **tag-driven**. To cut a new version:
+
+```bash
+# 1. Accumulate changes via changesets during development
+pnpm changeset                    # patch / minor / major + summary
+git commit -am "feat: ..."
+
+# 2. When ready to release, consume the changesets
+pnpm version-bump                 # bumps package.json + writes CHANGELOG
+git commit -am "chore: release"
+git push
+
+# 3. Tag and push — CI takes over
+pnpm release:tag                  # git tag v$VERSION && git push origin v$VERSION
+```
+
+The `Release` workflow runs typecheck → lint → test → build → `npm publish --provenance`,
+then creates a GitHub Release with auto-generated notes.
+
+> First-time setup: add `NPM_TOKEN` (granular access token, write scope) to repo secrets at
+> Settings → Secrets and variables → Actions.
 
 ## License
 

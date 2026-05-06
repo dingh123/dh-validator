@@ -62,12 +62,13 @@
     "format": "prettier --write \"{src,tests,examples}/**/*.{ts,js,md,json}\"",
     "format:check": "prettier --check \"{src,tests,examples}/**/*.{ts,js,md,json}\"",
     "typecheck": "tsc --noEmit",
-    "prepublishOnly": "pnpm build",
+    "prepublishOnly": "pnpm typecheck && pnpm test && pnpm build",
     "changeset": "changeset",
-    "version": "changeset version",
-    "release": "pnpm build && changeset publish",
+    "version-bump": "changeset version",
+    "release:tag": "node -e \"const v=require('./package.json').version;require('child_process').execSync('git tag v'+v+' && git push origin v'+v,{stdio:'inherit'})\"",
     "playground": "pnpm --dir playground dev",
-    "playground:install": "pnpm --dir playground install"
+    "playground:install": "pnpm --dir playground install",
+    "playground:build": "pnpm --dir playground build"
   },
   "peerDependencies": {
     "vue": "^2.7.0 || ^3.0.0"
